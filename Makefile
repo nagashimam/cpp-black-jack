@@ -1,5 +1,5 @@
 blackjack : **/CMakeLists.txt src/main.cpp
-	cmake -S . -B build && cmake --build build --target a.out
+	cmake -S . -B build && cmake --build build --target blackjack.out
 
 run : 
-	make && build/src/a.out
+	make && build/src/blackjack.out

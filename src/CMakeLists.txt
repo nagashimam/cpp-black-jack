@@ -1,1 +1,1 @@
-add_executable(a.out main.cpp)
+add_executable(blackjack.out main.cpp)
