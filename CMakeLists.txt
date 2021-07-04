@@ -1,3 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(blackjack CXX)
-add_subdirectory(src)
+set(CMAKE_CXX_STANDARD 20)
+
+if ("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+  add_subdirectory(test)
+else()
+  add_subdirectory(src)
+endif()
